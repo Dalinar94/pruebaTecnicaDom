@@ -8,7 +8,7 @@
     position: absolute;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
-    padding: 70px 30px;
+    padding: 40px 30px;
     border:1px,solid, #000;
     border-radius: 10px;
     box-shadow: 0 15px 25px rgba(0,0,0,.5);
@@ -66,10 +66,15 @@
 .logo-box{
     display: flex;
     position: absolute; 
-    top: 2%;
-    left: 16%;
+    
 }
 
-.logo-box img{
-    width: 80%;
+.select-box{
+    width: 96.4%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
 }
+

@@ -33,6 +33,19 @@ password.id = 'password';
 password.placeholder = 'Contraseña';
 loginBox.appendChild(password);
 
+//paises
+const paises = document.createElement('select');
+paises.className = 'select-box';
+const paisesArray = ['España', 'Francia', 'Italia', 'Alemania', 'Portugal', 'Reino Unido', 'Rusia', 'China', 'Japon', 'EEUU'];
+
+for (let i = 0; i < paisesArray.length; i++) {
+    const option = document.createElement('option');
+    option.value = paisesArray[i];
+    option.textContent = paisesArray[i];
+    paises.appendChild(option);
+}
+loginBox.appendChild(paises);
+
 //Button
 const button = document.createElement('button');
 button.textContent = 'Iniciar Sesion';
@@ -55,15 +68,20 @@ linksDiv.appendChild(OlvidarContraseña);
 
 loginBox.appendChild(linksDiv);
 
+
+
+
+
 //footer del login
 const footer = document.createElement('footer');
 footer.textContent = '© 2025 BICNET';
 loginBox.appendChild(footer);
 
 
+
 //Esto sirve para agregar el elemento al root
 root.appendChild(loginBox);
-
+root.appendChild(logoBox);
 
 function login() {
     let username = document.getElementById('username').value;
