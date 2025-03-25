@@ -1,3 +1,4 @@
+
 .login-box {
     width: 400px;
     height: 420px;
@@ -48,4 +49,27 @@
 
 .links a:hover {
     text-decoration: underline;
+}
+.login-box footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 0 0 10px 10px;
+    font-size: 15px;
+}
+
+.logo-box{
+    display: flex;
+    position: absolute; 
+    top: 2%;
+    left: 16%;
+}
+
+.logo-box img{
+    width: 80%;
 }

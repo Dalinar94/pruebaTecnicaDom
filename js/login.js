@@ -4,6 +4,16 @@ const root = document.getElementById('root');
 const loginBox = document.createElement('div');
 loginBox.className = 'login-box';
 
+//Imagen del logo
+const logoBox = document.createElement('div');
+logoBox.className = 'logo-box';
+loginBox.appendChild(logoBox);
+
+const imgLogo = document.createElement('img');
+imgLogo.src = "https://www.bicnet.es/wp-content/uploads/2017/03/logo-bicnet-web.png";
+imgLogo.alt = 'Error en la imagen';
+logoBox.appendChild(imgLogo);
+
 //Titulo
 const titulo = document.createElement('h2');
 titulo.textContent='Iniciar Sesion';
@@ -45,10 +55,15 @@ linksDiv.appendChild(OlvidarContraseña);
 
 loginBox.appendChild(linksDiv);
 
+//footer del login
+const footer = document.createElement('footer');
+footer.textContent = '© 2025 BICNET';
+loginBox.appendChild(footer);
 
 
 //Esto sirve para agregar el elemento al root
 root.appendChild(loginBox);
+
 
 function login() {
     let username = document.getElementById('username').value;
