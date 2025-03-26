@@ -33,7 +33,7 @@ password.id = 'password';
 password.placeholder = 'Contraseña';
 loginBox.appendChild(password);
 
-//paises
+//Paises
 const paises = document.createElement('select');
 paises.className = 'select-box';
 const paisesArray = ['España', 'Francia', 'Italia', 'Alemania', 'Portugal', 'Reino Unido', 'Rusia', 'China', 'Japon', 'EEUU'];
@@ -68,15 +68,10 @@ linksDiv.appendChild(OlvidarContraseña);
 
 loginBox.appendChild(linksDiv);
 
-
-
-
-
 //footer del login
 const footer = document.createElement('footer');
 footer.textContent = '© 2025 BICNET';
 loginBox.appendChild(footer);
-
 
 
 //Esto sirve para agregar el elemento al root
